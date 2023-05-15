@@ -1,7 +1,13 @@
 @font-face{
   font-family: "NanumNeo";
-  src: url(fonts/NanumSquareNeo-cBd.ttf) format('woff')
-}
+  src: 
 body{
   font-family: 'NanumNeo'
+}
+
+#title{
+  font-weight: ;
+  color: purple;
+  display: block;
+  text-align: center;
 }
