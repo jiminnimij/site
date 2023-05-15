@@ -1,0 +1,7 @@
+@font-face{
+  font-family: "NanumNeo";
+  src: url(fonts/NanumSquareNeo-cBd.ttf) format('woff')
+}
+body{
+  font-family: 'NanumNeo'
+}
