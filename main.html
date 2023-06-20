@@ -11,7 +11,7 @@
       <h1 id="title">Big Goal</h1>
 
       <nav>
-        <ul>
+        <ul id="bar">
           <li class="menu">창업</li>
           <li class="menu">해외취업</li>
           <li class="menu">집</li>
@@ -21,7 +21,7 @@
       </nav>
     </header>
     <main>
-      <div class="container">
+      <div id="container">
         <div class="box">
           <img src="/images/business.jpg" alt="창업">
           <p>대학을 졸업하면 한번쯤은 창업을 해보고싶어요!<br>혹시 몰라 미리 아이디어를 차곡차곡 모아두는 중입니다.</p>
@@ -42,10 +42,27 @@
           <img src="images/jeju.jpg" alt="게스트하우스">
           <p>평생 놀고 먹을 수 있는 돈이 생긴다면... 제주도에 가족들과 게스트하우스를 차려 새로운 사람들을 만나며 대화도 나누고 파티도 하고 바다도 보며 즐겁게 지내고 싶어요!</p>
         </div>
+        <div class="add">
+          <button class="addMenu" onclick="js:openWindow()">+</button>
+        </div>
+      </div>
+      <div id="windowBackground">
+        <form id="window">
+          <span class="close" onclick="js:closeWindow()">X</span>
+          <label for="goal">목표</label>
+          <input type="text" id="goal" placeholder="목표의 이름을 입력해주세요.">
+          <label for="img">이미지</label>
+          <input type="text" id="img" placeholder="이미지 링크를 입력해주세요.">
+          <label for="explain">내용</label>
+          <input type="text" id="explain" placeholder="목표의 이야기를 입력해주세요.">
+          <button type = "submit" id="save">저장하기</button>
+        </form>
       </div>
     </main>
     <footer>
 
     </footer>
   </body>
+  <script src="./javaScript.js" charset="UTF-8"></script>
+  <script src="./loadInfo.js" charset="UTF-8"></script>
 </html>
